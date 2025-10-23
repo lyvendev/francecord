@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>FranceCord</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🇫🇷 FranceCord</h1>
+    <nav>
+      <a href="#actualites">Actualités</a>
+      <button onclick="showLogin()">Se connecter</button>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <h2>Bienvenue sur FranceCord</h2>
+    <p>Le hub francophone pour suivre l’actualité Discord et échanger en français.</p>
+  </section>
+
+  <section id="actualites">
+    <h2>Actualités Discord</h2>
+    <p>Les dernières nouveautés seront publiées ici par nos rédacteurs.</p>
+  </section>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <h3>Connexion</h3>
+      <input type="text" id="username" placeholder="Nom d'utilisateur">
+      <input type="password" id="password" placeholder="Mot de passe">
+      <button onclick="login()">Connexion</button>
+      <p id="loginError" style="color:red;"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
