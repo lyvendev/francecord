@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard FranceCord</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>Dashboard FranceCord</h1>
+    <p id="welcome"></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Actualités</h2>
+      <button>Ajouter une actualité</button>
+    </section>
+
+    <section>
+      <h2>Membres du serveur Discord</h2>
+      <canvas id="memberChart"></canvas>
+    </section>
+
+    <section>
+      <h2>Statistiques du site</h2>
+      <p>Visites, connexions, activité des rédacteurs...</p>
+    </section>
+
+    <section>
+      <h2>Ajouter une catégorie</h2>
+      <input type="text" placeholder="Nom de la catégorie">
+      <button>Créer</button>
+    </section>
+
+    <section id="adminSection" style="display:none;">
+      <h2>Gestion des admins</h2>
+      <p>Ajouter ou retirer des administrateurs</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
